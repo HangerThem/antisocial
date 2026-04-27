@@ -27,11 +27,15 @@ A simple, self-hosted, expiring social media feed built with Next.js and Prisma.
    ```env
    DATABASE_FILE=file:./data/antisocial.db
    ```
-5. Run the development server:
+5. Run the Prisma migrations to set up the database:
+   ```bash
+   npx prisma migrate dev --name init
+   ```
+6. Run the development server:
    ```bash
    npm run dev
    ```
-6. Open your browser and navigate to `http://localhost:3000` to see the app in action.
+7. Open your browser and navigate to `http://localhost:3000` to see the app in action.
 
 ## License
 
